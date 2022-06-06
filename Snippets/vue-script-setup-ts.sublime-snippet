@@ -1,0 +1,18 @@
+<snippet>
+  <content><![CDATA[
+<script setup lang="${1:ts}">
+${0}
+</script>
+
+<template>
+
+</template>
+
+<style scoped>
+
+</style>
+
+]]></content>
+  <tabTrigger>vue3</tabTrigger>
+  <scope>text.html.vue</scope>
+</snippet>

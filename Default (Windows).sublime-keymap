@@ -1,0 +1,54 @@
+[
+  // Save all
+  { "keys": ["ctrl+alt+s"], "command": "save_all" },
+
+  // Emmet
+  { "keys": ["ctrl+e"], "command": "emmet_expand_abbreviation" },
+
+  // Reveal in Size Bar
+  { "keys": ["ctrl+alt+b"], "command": "reveal_in_side_bar" },
+
+  // Plugin-Origami
+  { "keys": ["ctrl+shift+alt+up"], "command": "create_pane", "args": {"direction": "up"} },
+  { "keys": ["ctrl+shift+alt+right"], "command": "create_pane", "args": {"direction": "right"} },
+  { "keys": ["ctrl+shift+alt+down"], "command": "create_pane", "args": {"direction": "down"} },
+  { "keys": ["ctrl+shift+alt+left"], "command": "create_pane", "args": {"direction": "left"} },
+
+  // Disable all autocompletion and tab completion. This overrides the default
+  // binding for this key.
+  { "keys": ["tab"], "command": "insert", "args": {"characters": "\t"} },
+  { "keys": ["tab"], "command": "auto_complete", "args": {"mini": true, "default": "\t"},
+    "context":
+    [
+      { "key": "auto_complete_visible", "operand": false },
+      // { "key": "selection_empty", "operator": "equal", "operand": true, "match_all": true },
+      // { "key": "setting.tab_completion", "operator": "equal", "operand": true },
+      // { "key": "preceding_text", "operator": "regex_match", "operand": ".*\\w", "match_all": true },
+    ]
+  },
+  { "keys": ["tab"], "command": "expand_snippet", "context":
+    [{ "key": "has_snippet" }, ]
+  },
+  { "keys": ["tab"], "command": "reindent", "context":
+    [
+      { "key": "setting.auto_indent", "operator": "equal", "operand": true },
+      { "key": "selection_empty", "operator": "equal", "operand": true, "match_all": true },
+      { "key": "preceding_text", "operator": "regex_match", "operand": "^$", "match_all": true },
+      { "key": "following_text", "operator": "regex_match", "operand": "^$", "match_all": true }
+    ]
+  },
+  { "keys": ["tab"], "command": "indent", "context":
+    [{ "key": "text", "operator": "regex_contains", "operand": "\n" }]
+  },
+  { "keys": ["tab"], "command": "move", "args": {"by": "lines", "forward": true}, "context":
+    [
+      { "key": "overlay_has_focus", "operator": "equal", "operand": true }
+    ]
+  },
+  { "keys": ["tab"], "command": "next_field", "context":
+    [{ "key": "has_next_field", "operator": "equal", "operand": true }]
+  },
+  // { "keys": ["tab"], "command": "commit_completion", "context":
+  //   [{ "key": "auto_complete_visible" }]
+  // },
+]

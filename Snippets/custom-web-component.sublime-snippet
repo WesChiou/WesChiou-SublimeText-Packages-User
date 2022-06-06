@@ -1,0 +1,70 @@
+<snippet>
+  <content><![CDATA[
+class ${1:CustomComponent} extends HTMLElement {
+  constructor() {
+    super()
+
+    const tmpl = document.createElement('template')
+
+    tmpl.innerHTML = `
+      <style>
+        :host {
+          display: block;$0
+        }
+      </style>
+      <div>
+        <slot></slot>
+      </div>
+    `
+
+    // Attach a shadow root to the element.
+    const shadow = this.attachShadow({ mode: 'open' })
+    shadow.appendChild(tmpl.content.cloneNode(true))
+
+    this.addEventListener('click', this._onClick.bind(this));
+  }
+
+  //
+  // properties
+  //
+
+  // property 'value'
+  get value() {
+  }
+  set value(v) {
+  }
+
+  //
+  // observe attributes change
+  //
+
+  static get observedAttributes() {
+    return []
+  }
+  attributeChangedCallback(name, oldValue, newValue) {
+  }
+
+
+  connectedCallback() {
+  }
+  disconnectedCallback() {
+  }
+
+  adoptedCallback() {
+  }
+
+  //
+  // more methods
+  //
+
+  // 'click' callback
+  _onClick(event) {
+  }
+}
+
+customElements.define('${2:custom-component}', ${1:CustomComponent})
+
+]]></content>
+  <tabTrigger>custom</tabTrigger>
+  <scope>source.js</scope>
+</snippet>

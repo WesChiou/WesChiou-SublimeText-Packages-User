@@ -1,0 +1,35 @@
+<snippet>
+  <content><![CDATA[
+{
+  "folders":
+  [
+    {
+      "binary_file_patterns":
+      [
+      ],
+      "file_exclude_patterns":
+      [
+      ],
+      "folder_exclude_patterns":
+      [
+      ],
+      "name": "projectname",
+      "path": "projectpath"
+    }
+  ],
+  "settings": {
+    "LSP": {
+      "LSP-volar": {
+          "selector": "text.html.vue | source.ts | source.tsx | source.js | source.jsx"
+      },
+      "LSP-typescript": {
+        "enabled": false
+      }
+    }
+  }
+}
+
+]]></content>
+  <tabTrigger>project</tabTrigger>
+  <scope>source.json.sublime</scope>
+</snippet>

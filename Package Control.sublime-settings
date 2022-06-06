@@ -1,0 +1,38 @@
+{
+	"bootstrapped": true,
+	"installed_packages":
+	[
+		"A File Icon",
+		"All Autocomplete",
+		"Color Highlight",
+		"DocBlockr",
+		"Emmet",
+		"FileDiffs",
+		"GBK Support",
+		"HDL Syntax Highlighting",
+		"LSP",
+		"LSP-typescript",
+		"LSP-volar",
+		"MarkdownPreview",
+		"Origami",
+		"Package Control",
+		"PlainTasks",
+		"Pretty JSON",
+		"ProjectManager",
+		"SCSS",
+		"Sublime wxapp",
+		"SublimeLinter",
+		"SublimeLinter-eslint",
+		"SublimeLinter-gcc",
+		"SublimeLinter-stylelint",
+		"Terminal",
+		"Vue Syntax Highlight",
+		"Vuejs Snippets",
+	],
+	"in_process_packages":
+	[
+	],
+	"repositories":
+	[
+	],
+}

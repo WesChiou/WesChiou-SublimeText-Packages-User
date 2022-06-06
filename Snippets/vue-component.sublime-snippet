@@ -1,0 +1,28 @@
+<snippet>
+  <content><![CDATA[
+<template>
+  <p>${0:ComponentName}</p>
+</template>
+
+<script>
+export default {
+  name: '${0:ComponentName}',
+  props: {
+  },
+  data() {
+    return {
+    };
+  },
+};
+</script>
+
+<style ${1:scoped}>
+
+</style>
+
+]]></content>
+  <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+  <tabTrigger>vue2</tabTrigger>
+  <!-- Optional: Set a scope to limit where the snippet will trigger -->
+  <scope>text.html.vue</scope>
+</snippet>
